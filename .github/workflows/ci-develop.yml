@@ -8,7 +8,6 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-
     steps:
       - name: Repository 접근
         uses: actions/checkout@v4
@@ -30,6 +29,6 @@ jobs:
           ./gradlew generateDependencyGraph
 
       - name: 의존성 그래프 업로드
-        uses: github/dependency-submission-action@v2
+        uses: actions/dependency-submission-action@v2
         with:
           gradle-build-file: 'build.gradle'

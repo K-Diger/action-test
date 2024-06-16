@@ -7,5 +7,6 @@ import org.springframework.boot.runApplication
 class ActionTestApplication
 
 fun main(args: Array<String>) {
+    println("test")
     runApplication<ActionTestApplication>(*args)
 }
