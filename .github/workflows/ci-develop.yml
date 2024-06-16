@@ -27,8 +27,3 @@ jobs:
         run: |
           ./gradlew build
           ./gradlew generateDependencyGraph
-
-      - name: 의존성 그래프 업로드
-        uses: actions/dependency-submission-action@v2
-        with:
-          gradle-build-file: 'build.gradle'
